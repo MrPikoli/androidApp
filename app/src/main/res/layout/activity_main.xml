@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter you name">
+
+        </EditText>
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:layout_below="@+id/Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="96dp"
+            android:src="@drawable/cocacola">
+
+        </ImageView>
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="42dp">
+
+        </Spinner>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="21dp"
+            android:text="Select item">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/decrease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="390dp"
+            android:onClick="decrease"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="390dp"
+            android:layout_marginEnd="45dp"
+            android:onClick="increase"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/Cart"
+            android:onClick="addToCart"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="445dp"
+            android:text="Add to cart" />
+
+
+        <TextView
+            android:id="@+id/textQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Name"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="400dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/order"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="63dp"
+            android:text="0"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:text="Order price"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+
+
+</ScrollView>
